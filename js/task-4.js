@@ -5,7 +5,12 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 // -------------------------------------------------------
 
+const getTotalBalanceByGender = ((users, gender) => users
+.filter((users) => users.gender === gender)
+.reduce((acc, userBalance) => { return acc + userBalance.balance}, 0));
+
 // --------------------------------------------------------
+
 const clients = [
 	{
     name: "Moore Hensley",
